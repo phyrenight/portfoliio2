@@ -43,12 +43,38 @@ section {
 
 .project {
   width: 200px;
-  margin: 2% 3%;
+  margin: 4%;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
   -o-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
   -mox-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
   -ms-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6); }
+
+.project-container + .project-container {
+  margin: 4% 7%; }
+
+.project-container {
+  display: inline-block;
+  position: relative; }
+
+.project-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background: white;
+  display: none;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+  -mox-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+  -ms-box-shadow: 10px 10px 5px rgbas(0, 0, 0, 0.6);
+  -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6); }
+
+.project-container:hover .project-details {
+  display: inline-block; }
+
+.project-container:hover .project-details {
+  display: inline-block; }
 
 a img + a img {
   margin-left: 2%; }
@@ -66,6 +92,13 @@ li + li {
 
 h2 {
   margin: 15px; }
+
+.button {
+  display: inline-block;
+  height: 3%;
+  width: 5%;
+  background: #646464;
+  border-radius: 5%; }
 
 @media (min-width: 500px) {
   #intro h1 {
